@@ -2,9 +2,8 @@ const gifts = ['tren', 'oso', 'pelota']
 const materials = 'tronesa'
 
 function manufacture(gifts, materials) {
-  return gifts.filter(gift => 
-    gift.split("").every(char => materials.includes(char))
-  )
+  const regex = new RegExp("^[" + materials + "]+$")
+  return gifts.filter(gift => regex.test(gift))
 }
 
 const res = manufacture(gifts, materials)
