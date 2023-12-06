@@ -12,12 +12,9 @@ function maxDistance(movements) {
 
   for (const char of movements) {
     if (char === '*') {
-      if (plusDir > minusDir) distance++
-      else if (plusDir < minusDir) distance--
+      if (plusDir < minusDir) distance--
       else distance++
-    } else {
-      distance = char === '>' ? distance + 1 : distance - 1
-    }
+    } else distance = char === '>' ? distance + 1 : distance - 1
   }
 
   return Math.abs(distance);
