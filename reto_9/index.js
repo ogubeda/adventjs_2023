@@ -1,17 +1,17 @@
 console.log(adjustLights(['🟢', '🔴', '🟢', '🟢', '🟢']))
 
 function adjustLights(lights) {
-  let count = 0
+  const result = [0, 0]
+  let nextIsRed = false
 
-  for (let i = 0; i < lights.length; i++) {
-    if (lights[i] === '🟢' && lights[i + 1] === '🟢') {
-      lights[i + 1] = '🔴'
-      count++
-    } else if (lights[i] === '🔴' && lights[i + 1] === '🔴') {
-      lights[i + 1] = '🟢'
-      count++
-    }
+  for (const light of lights) {
+    const isWrong = nextIsRed ? light === '🟢' : light === '🔴'
+
+    if(isWrong) result[0]++
+    else result[1]++
+
+    nextIsRed = !nextIsRed
   }
-
-  return count
+  
+  return Math.min(...result)
 }
