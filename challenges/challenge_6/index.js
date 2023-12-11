@@ -1,5 +1,3 @@
-console.log(maxDistance('>>>*<<<<'))
-
 function maxDistance(movements) {
   let distance = 0
   let plusDir = 0
@@ -19,3 +17,5 @@ function maxDistance(movements) {
 
   return Math.abs(distance);
 }
+
+module.exports = maxDistance

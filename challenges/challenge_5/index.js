@@ -1,7 +1,3 @@
-const road = 'S..|...|..'
-const time = 10 // unidades de tiempo
-
-
 function cyberReindeer(road, time) {
   const states = [road]
   const availablePaths = ['.', '*']
@@ -27,6 +23,4 @@ function cyberReindeer(road, time) {
   return states
 }
 
-const result = cyberReindeer(road, time)
-
-console.log(result)
+module.exports = cyberReindeer

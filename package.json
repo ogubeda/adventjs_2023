@@ -1,6 +1,7 @@
 {
 	"scripts": {
-		"test": "jest"
+		"test": "jest",
+		"challenge": "node --watch ./challenges/challenge_${npm_config_num}/index.js"
 	},
 	"devDependencies": {
 		"jest": "^29.7.0"

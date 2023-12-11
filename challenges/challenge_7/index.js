@@ -25,4 +25,4 @@ function drawGift(size, symbol) {
   return gift
 }
 
-console.log(drawGift(4, '*'))
+module.exports = drawGift

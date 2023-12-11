@@ -1,9 +1,5 @@
 const manufacture = require('./index')
 
-test('2#. Is array', () => {
-  expect(manufacture([1, 2, 3], '')).toBeInstanceOf(Array)
-})
-
 test('2#. It finds the words that can be made - Test 1', () => {
   expect(manufacture(['tren', 'oso', 'pelota'], 'tronesa')).toEqual(["tren", "oso"])
 })

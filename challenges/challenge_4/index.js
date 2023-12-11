@@ -1,5 +1,3 @@
-const message = 'sa(u(cla)atn)s'
-
 function decode(message) {
   let stack = ['']
 
@@ -13,6 +11,4 @@ function decode(message) {
   return stack[0]
 }
 
-const res = decode(message)
-
-console.log(res)
+module.exports = decode

@@ -1,7 +1,3 @@
-const original = ''
-const modified = 'aaa'
-
-
 function findNaughtyStep(original, modified) {
   let step = ''
   const maxLength = Math.max(original.length, modified.length)
@@ -19,6 +15,4 @@ function findNaughtyStep(original, modified) {
   return step
 }
 
-const res = findNaughtyStep(original, modified)
-
-console.log(res)
+module.exports = findNaughtyStep

@@ -1,9 +1,5 @@
 const findFirstRepeated = require('./index')
 
-test('1#. Is number', () => {
-  expect(typeof findFirstRepeated([1, 2, 3])).toBe('number')
-})
-
 test('1#. It finds the first repeated gift - Test 1', () => {
   const gifts = [2, 1, 3, 5, 3, 2]
   expect(findFirstRepeated(gifts)).toBe(3)
