@@ -39,7 +39,7 @@ test('7#. It returns a string cube - Test 4', () => {
 #++##
 ####`)
 })
-
+//
 test('7#. It returns a string cube - Test 5', () => {
   expect(drawGift(4, "+")).toEqual(`   ####
   #++##
