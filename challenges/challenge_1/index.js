@@ -1,5 +1,3 @@
-const giftIds = [2, 1, 3, 5, 3, 2]
-
 function findFirstRepeated(gifts) {
   const seenGiftIds = new Set()
     
@@ -11,7 +9,4 @@ function findFirstRepeated(gifts) {
   return -1
 }
  
-
-const res = findFirstRepeated(giftIds)
-
-console.log(res)
+module.exports = findFirstRepeated
