@@ -1,12 +1,6 @@
 function findFirstRepeated(gifts) {
-  const seenGiftIds = new Set()
-    
-  for (const giftId of gifts) {
-    if (seenGiftIds.has(giftId)) return giftId
-    seenGiftIds.add(giftId)
-  }
-
-  return -1
+  const find = gifts.find((gift, i, self) => self.indexOf(gift) !== i)
+  return [-1,find][+(!!(find))]
 }
- 
+
 module.exports = findFirstRepeated
